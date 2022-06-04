@@ -1,0 +1,10 @@
+div {
+  display: inline-block;
+  width: 200px;
+}
+
+span {
+  width: 200px;
+  height: 100px;
+  display: block;
+}
