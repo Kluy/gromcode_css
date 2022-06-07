@@ -14,8 +14,7 @@
   color: white;
   list-style-type: none;
   vertical-align: middle;
-  display: inline-block;
-  vertical-align: middle;
+  float: left;
 }
 .content {
   background-color: beige;
