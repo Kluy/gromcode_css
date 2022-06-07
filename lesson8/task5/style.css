@@ -1,0 +1,17 @@
+div {
+  border: 2px solid black;
+  padding: 50px;
+}
+.box4 {
+  background-color: #ffc0cb;
+}
+.box3 {
+  background-color: green;
+}
+.box2 {
+  background-color: yellow;
+}
+.box1 {
+  background-color: blue;
+  margin: 50px;
+}
