@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.block {
+  height: 100px;
+  min-width: 100px;
+  flex-grow: 1;
+}
