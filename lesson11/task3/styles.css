@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 .dropdown {
+  position: absolute;
+
   margin: 16px;
 }
 .menu-button {
