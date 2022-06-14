@@ -1,5 +1,8 @@
-body {
+html {
   margin: 32px;
+}
+
+body {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   box-sizing: border-box;
