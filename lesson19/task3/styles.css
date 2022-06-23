@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  height: 100vh;
+}
+.spinner {
+  position: relative;
+  font-family: monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: auto;
+}
+.spinner-text {
+  animation: blinking 2s infinite linear;
+}
+.rect {
+  background-color: black;
+  width: 10px;
+  height: 4px;
+  border-radius: 2px;
+  animation: moving 2s alternate infinite, blinking 2s infinite;
+  position: absolute;
+}
+@keyframes moving {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: 70px;
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
