@@ -4,22 +4,24 @@
 .container {
   display: flex;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 .spinner {
   position: relative;
   font-family: monospace;
-  font-size: 16px;
   text-transform: uppercase;
-  margin: auto;
+  font-size: 16px;
 }
 .spinner-text {
+  display: block;
   animation: blinking 2s infinite linear;
 }
 .rect {
-  background-color: black;
   width: 10px;
   height: 4px;
   border-radius: 2px;
+  background-color: black;
   animation: moving 2s alternate infinite, blinking 2s infinite;
   position: absolute;
 }
