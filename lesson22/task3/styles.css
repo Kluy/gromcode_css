@@ -1,0 +1,10 @@
+div {
+  display: flex;
+  height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+picture {
+  margin: auto;
+}
