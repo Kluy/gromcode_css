@@ -1,0 +1,53 @@
+$sm: 600px;
+$md: 900px;
+
+@mixin small-screen {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin medium-screen {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+
+main {
+  @include medium-screen {
+    display: flex;
+  }
+}
+
+.nav {
+  background-color: #ff7f50;
+  flex: 50%;
+}
+.product-list {
+  background-color: #006400;
+  flex: 50%;
+}
+.news {
+  background-color: #0ff;
+  flex: calc(100% * 1 / 3);
+}
+
+section {
+  flex: calc(100% * 2 / 3);
+  @include small-screen {
+    display: flex;
+  }
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+span {
+  text-transform: lowercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #faebd7;
+}

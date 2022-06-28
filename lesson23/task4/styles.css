@@ -1,0 +1,50 @@
+@media screen and (min-width: 900px) {
+  main {
+    display: flex;
+  }
+}
+
+.nav {
+  background-color: #ff7f50;
+  flex: 50%;
+}
+
+.product-list {
+  background-color: #006400;
+  flex: 50%;
+}
+
+.news {
+  background-color: #0ff;
+  flex: 33.3333333333%;
+}
+
+section {
+  flex: 66.6666666667%;
+}
+@media screen and (min-width: 600px) {
+  section {
+    display: flex;
+  }
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+span {
+  text-transform: lowercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #faebd7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */
