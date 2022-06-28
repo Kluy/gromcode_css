@@ -1,0 +1,34 @@
+@import 'breakpoints.scss';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+}
+.container {
+  margin: auto;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  background-color: #ff7f50;
+
+  @include medium_screen {
+    background-color: #8a2be2;
+  }
+  @include large_screen {
+    background-color: #a61;
+  }
+  @include extra_large_screen {
+    background-color: #c47;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .container {
+    display: flex;
+  }
+}

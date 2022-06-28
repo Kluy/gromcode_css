@@ -1,0 +1,19 @@
+$sm: 600px;
+$md: 900px;
+$lr: 1200px;
+
+@mixin medium_screen {
+  @media screen and(min-width:$sm) {
+    @content;
+  }
+}
+@mixin large_screen {
+  @media screen and(min-width:$md) {
+    @content;
+  }
+}
+@mixin extra_large_screen {
+  @media screen and(min-width:$lr) {
+    @content;
+  }
+}
